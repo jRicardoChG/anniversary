@@ -25,9 +25,10 @@ app.post('/login', (req, res) => {
   const { username, password } = req.body;
 
   // Verifica la contraseña
-  const validPassword = '1234'; // Contraseña ficticia para verificar
+  const validPassword = 'amorpechocha1003'; // Contraseña ficticia para verificar
+  const validuser = 'SaraV'; // Contraseña ficticia para verificar
 
-  if (password === validPassword) {
+  if (password === validPassword && username === validuser) {
     res.redirect('/welcome');
   } else {
     res.send('Contraseña incorrecta. Inténtalo de nuevo.');
