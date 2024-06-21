@@ -2,13 +2,18 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
-const port = 3000;
+const port = 8080;
 
 // Middleware para parsear el body de las requests
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Servir archivos estáticos desde la carpeta 'public'
 app.use(express.static('public'));
+
+// Renderiza el formulario de login desde el archivo HTML
+app.get('/', (req, res) => {
+    res.send("Hola server activo");
+  });
 
 // Renderiza el formulario de login desde el archivo HTML
 app.get('/login', (req, res) => {
