@@ -26,7 +26,7 @@ app.post('/login', (req, res) => {
 
   // Verifica la contraseña
   const validPassword = 'amorpechocha1003'; // Contraseña ficticia para verificar
-  const validuser = 'SaraV'; // Contraseña ficticia para verificar
+  const validuser = 'sarav'; // Contraseña ficticia para verificar
 
   if (password === validPassword && username === validuser) {
     res.redirect('/welcome');
