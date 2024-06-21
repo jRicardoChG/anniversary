@@ -50,3 +50,24 @@ body {
   input[type="submit"]:hover {
     background-color: #4cae4c;
   }
+
+  #welcome-page {
+    font-family: 'Great Vibes', cursive; /* Aplica la fuente cursiva */
+    font-size: x-large;
+    padding: 5%;
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: initial;
+    align-items: initial;
+    color: black;
+    text-align: center;
+  }
+  
+  .welcome-message {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0); /* Fondo semi-transparente para el texto */
+  }
