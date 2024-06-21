@@ -1,9 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const http = require('http');
 const path = require('path');
 const app = express();
-const port = 8080;
+const port = 80;
 
 // Middleware para parsear el body de las requests
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -40,6 +39,6 @@ app.get('/welcome', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'welcome.html'));
 });
 
-http.createServer(app).listen(port, () => {
+app.listen(port, () => {
   console.log(`Servidor ejecutándose en http://localhost:${port}`);
 });
