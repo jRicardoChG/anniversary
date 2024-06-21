@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const http = require('http');
 const path = require('path');
 const app = express();
 const port = 8080;
@@ -39,6 +40,6 @@ app.get('/welcome', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'welcome.html'));
 });
 
-app.listen(port, () => {
+http.createServer(app).listen(port, () => {
   console.log(`Servidor ejecutándose en http://localhost:${port}`);
 });
