@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     margin: 0;
   }
   
@@ -57,7 +57,7 @@ body {
     font-weight: normal;
     padding: 5%;
     background-image: url('fondo.jpg');
-    background-repeat:repeat-y;
+    background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
     height: 100%;
@@ -68,12 +68,6 @@ body {
     align-items: initial;
     color: black;
     text-align: center;
-  }
-  
-  .welcome-message {
-    display: flex;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0); /* Fondo semi-transparente para el texto */
   }
 
   .welcome-message-parrafo {
